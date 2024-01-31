@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<guides
+    xmlns="https://www.phpdoc.org/guides"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.phpdoc.org/guides vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+>
+    <project
+        title="browsersync demo"
+        copyright="Garvin Hicking"
+    />
+    <extension
+        class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+        edit-on-github="garvinhicking/typo3-documentation-browsersync"
+        edit-on-github-branch="main"
+        interlink-shortcode="ghBrowsersync"
+        project-contact="https://github.com/garvinhicking/"
+        project-home="https://github.com/garvinhicking/typo3-documentation-browsersync"
+        project-issues="https://github.com/garvinhicking/typo3-documentation-browsersync/issues"
+        project-repository="https://github.com/garvinhicking/typo3-documentation-browsersync"
+        typo3-core-preferred="stable"
+    />
+</guides>
