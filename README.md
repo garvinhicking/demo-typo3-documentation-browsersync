@@ -4,6 +4,16 @@ This project is a demo repository which utilizes
 
 https://github.com/garvinhicking/typo3-documentation-browsersync
 
+Ultra-short kickstart to use this, run the provided Docker container:
+
+```
+docker run --rm -it --pull always \
+         -v "./Documentation:/project/Documentation" \
+         -v "./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp" \
+         -p 5173:5173 ghcr.io/garvinhicking/typo3-documentation-browsersync:latest
+# See below for an explanation of this
+```
+
 That is a package that allows you to render TYPO3 Documentation
 from reStructuredText (`.rst`) files. The files are rendered
 through the official https://github.com/TYPO3-documentation/render-guides
@@ -124,7 +134,7 @@ as the output, so you'll likely not need to adapt anything.
 *Hint*: If you want to run multiple renderings side-by-side, you would need to adapt the
 mapped port for each project (see above).
 
-# HEADS UP: Writing files
+# HEADS UP: WRITE-actions to files on the HOST-side!
 
 *IMPORTANT*: The rendering process will *CHANGE AND OVERWRITE FILES* in the
 output-directory (`Documentation-GENERATED-temp`). Be sure to only execute
