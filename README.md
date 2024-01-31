@@ -4,14 +4,23 @@ This project is a demo repository which utilizes
 
 https://github.com/garvinhicking/typo3-documentation-browsersync
 
-Ultra-short kickstart to use this, run the provided Docker container:
+Ultra-short kickstart to see this demo in action:
 
 ```
+cd /tmp
+git clone https://github.com/garvinhicking/demo-typo3-documentation-browsersync.git
+cd demo-typo3-documentation-browsersync
 docker run --rm -it --pull always \
          -v "./Documentation:/project/Documentation" \
          -v "./Documentation-GENERATED-temp:/project/Documentation-GENERATED-temp" \
          -p 5173:5173 ghcr.io/garvinhicking/typo3-documentation-browsersync:latest
-# See below for an explanation of this
+# See below for an explanation of the 'docker run'
+
+# Now open your browser and point it to:
+# http://localhost:5173/Documentation-GENERATED-temp/Index.html
+
+# On your host: Edit Documentation/Index.rst with any editor you like, save, 
+# see browser reload.
 ```
 
 That is a package that allows you to render TYPO3 Documentation
