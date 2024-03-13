@@ -4,6 +4,8 @@ This project is a demo repository which utilizes
 
 https://github.com/garvinhicking/typo3-documentation-browsersync
 
+It comes with a dummy Documentation to render.
+
 Ultra-short kickstart to see this demo in action:
 
 ```
@@ -40,13 +42,16 @@ and reviewing it side-by-side.
 
 More details are found in the README of the project itself.
 
+**TODO**: Move this documentation to the actual repository:
+
 ## Using `typo3-documentation-browsersync`
 
 You can use this demo repository to see how to easily use
 https://github.com/garvinhicking/typo3-documentation-browsersync
 in any of your own projects.
 
-You NEED to use Docker for this to work.
+You NEED to use Docker for this to work. Podman works well to,
+replace all `docker` commands with `podman` in that case.
 
 Natively, you would require a lot of additional dependencies
 (PHP, composer, NodeJS, nvm) and the underlying `TYPO3-Documentation/render-guides`
@@ -58,8 +63,7 @@ use impossible.
 This repository provides:
 
 * A sample directory `Documentation/` with `.rst` files.
-* An empty directory `Documentation-GENERATED-temp/`, where rendered HTML
-  will be stored.
+* An empty directory `Documentation-GENERATED-temp/`, where rendered HTML will be stored.
 * A very simple file `typo3-browsersync.sh` / `typo3-browsersync.bat` that runs the Docker container.
 
 ## Usage
